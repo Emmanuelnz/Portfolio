@@ -54,25 +54,6 @@ a:active {
   color: #489c79;
 }
 
-button {
-  border: none;
-  font-family: inherit;
-  font-size: 17px;
-  width: 200px;
-  background-color: #347b70;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 20px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-button:hover,
-button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
 .button_secondary {
   background-color: #e0b354;
   color: #2b2b2b;
@@ -197,20 +178,6 @@ button:focus {
 
 .about_list {
   list-style-type: none;
-}
-
-.button,
-button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s opacity;
 }
 
 @keyframes color-change {

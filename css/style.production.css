@@ -177,22 +177,6 @@ a:active {
   list-style-type: none;
 }
 
-.button,
-button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-}
-
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
