@@ -179,21 +179,3 @@ a:active {
 .about_list {
   list-style-type: none;
 }
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #f76414;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
