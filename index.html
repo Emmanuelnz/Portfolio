@@ -3,60 +3,977 @@
 <html lang="en">
 
 <head>
-  <title>My Portfolio</title>
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
+  <title>Portfolio - Emmanuel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="img/e-icon.png" sizes="32x32"/>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8ed4f7edda.js" crossorigin="anonymous"></script>
+
 </head>
 
-  <body class="index-body">
-
+  <body data-bs-spy="scroll" data-bs-target=".main-navigation">
     <header class="page-header">
-        <img src="img/emmanuel.png" alt="logo" class="page-header_item">
-    <nav class="main-navigation page-header_item">
+      <nav class="main-navigation page-header_item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list_item navigation-list_item--active">Home</a>
+            <a 
+              href="index.html" 
+              role="menuitem" 
+              class="navigation-list_item navigation-list_item--active">
+              <button type="button" class="btn btn-outline-dark">
+                < Home >
+              </button>
+            </a>
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
+            <a 
+              href="#work" 
+              role="menuitem" 
+              class="navigation-list_item">
+              <button type="button" class="btn btn-outline-dark">
+                < Work >
+              </button> 
+            </a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list_item navigation-list__item--active">Work</a>
+            <a 
+              href="#about" 
+              role="menuitem" 
+              class="navigation-list_item navigation-list__item--active"> 
+              <button type="button" class="btn btn-outline-dark">
+                < About >
+              </button>
+            </a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+            <a 
+              href="#contact" 
+              role="menuitem" 
+              class="navigation-list_item"> 
+              <button type="button" class="btn btn-outline-dark">
+                < Contact >
+              </button> 
+            </a>
           </li>
         </ul>
-    </nav>
+      </nav>
     </header>
     
     <main>
+    <!-------------------- Index / Home   -------------------->
     <div class="profile">
-      <img src="img/stockimg.jpg" class="profile_portrait" alt="Portrait of me">
-      <h1>Hello World!</h1>
-      <p>
-      My name is Emmanuel Nunez and I like to make <span>stuff</span> on the Web.
-      </p>
-      <a href="#">Check out some of my code!</a>
+      <h1 class="intro-title">Hello. I am <br> Emmanuel</h1>
+        <p class="sub-intro">I like to make stuff on the web:)</p>
     </div>
+    <!-------------------- End of Index / Home   -------------------->
+    <div class="in-betweens" id="work">
+      <div>
+        <h1>W O R K</h1>
+      </div> 
+    </div>
+    <!-------------------- Work / Projects  -------------------->
+    <div class="work-cards row row-cols-1 row-cols-md-4 g-3">
+      <!-- The Pokimon-Archives -->
+      <div class="col">
+        <div class="card">
+          <div id="PokémonArchivesIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button 
+                type="button" 
+                data-bs-target="#PokémonArchivesIndicators" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#PokémonArchivesIndicators" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#PokémonArchivesIndicators" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/ThePokemonArchives-Home.png" class="d-block w-100" alt="Welcome screen">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ThePokemonArchives-Search.png" class="d-block w-100" alt="Home">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ThePokemonArchives-Pokemon.png" class="d-block w-100" alt="Functionality">
+              </div>
+            </div>
+            <button 
+              class="carousel-control-prev" 
+              type="button" 
+              data-bs-target="#PokémonArchivesIndicators" 
+              data-bs-slide="prev"
+              >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button 
+              class="carousel-control-next" 
+              type="button" 
+              data-bs-target="#PokémonArchivesIndicators" 
+              data-bs-slide="next"
+              >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">The PokémonArchives</h5>
+            <p class="card-text"><span>The PokémonArchives</span> is essentially a Pokédex clone. This app was developed as part of the <span>Career Foundry full stack web dev course</span>. The app allows you to view Pokémon and their basic stats. I was introduced to <span>Javascripts</span> and working with a<span>3rd Party Api</span> for the first time. It was also my first time using <span>Bootstrap</span> and <span>Jquery</span> to add further styling + functionality to the app.
+          </div>
+          <!-- work modal -->
+          <div class="work-modal">
+            <button 
+              type="button" 
+              class="btn btn-outline-dark" 
+              data-bs-toggle="modal" 
+              data-bs-target="#PokémonArchivesModal"
+              >More
+            </button>
+
+            <div class="modal fade" id="PokémonArchivesModal" tabindex="-1" aria-labelledby="PokémonArchivesLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="PokémonArchivesLabel">The PokémonArchives</h1>
+                    <button 
+                      type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close"
+                      >
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="PokémonArchivesLight" class="carousel carousel-Light slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button 
+                          type="button" 
+                          data-bs-target="#PokémonArchivesLight" 
+                          data-bs-slide-to="0" 
+                          class="active" 
+                          aria-current="true" 
+                          aria-label="Slide 1"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#PokémonArchivesLight" 
+                          data-bs-slide-to="1" 
+                          aria-label="Slide 2"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#PokémonArchivesLight" 
+                          data-bs-slide-to="2" 
+                          aria-label="Slide 3"
+                          >
+                        </button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="img/ThePokemonArchives-Home.png" class="d-block w-100" alt="Welcome Screen">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Home</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="img/ThePokemonArchives-Search.png" class="d-block w-100" alt="Home">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Search</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/ThePokemonArchives-Pokemon.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Pokémon </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button 
+                        class="carousel-control-prev" 
+                        type="button" 
+                        data-bs-target="#PokémonArchivesLight" 
+                        data-bs-slide="prev"
+                        >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button 
+                        class="carousel-control-next" 
+                        type="button" 
+                        data-bs-target="#PokémonArchivesLight" 
+                        data-bs-slide="next"
+                        >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div>
+                      <ul class="work-modal-list list-group">
+                        <li class="list-group-item">
+                          <span class="modal-title">The PokémonArchives</span> is essentially a Pokédex clone. This app was developed as part of the <span>Career Foundry full stack web dev course</span>. The app allows you to view Pokémon and their basic stats. I was introduced to <span>Javascripts</span> and working with an <span>external API</span> for the first time. It was also my first time using <span>Bootstrap</span> and <span>Jquery</span> to add further styling + functionality to the app. 
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-screwdriver-wrench"></i> <span>-</span> |
+                            HTML <i class="fa-brands fa-html5"></i> | 
+                            CSS <i class="fa-brands fa-css3-alt"></i> | 
+                            Javascript <i class="fa-brands fa-square-js"></i> | 
+                            Bootstrap <i class="fa-brands fa-bootstrap"></i> | Jquery
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-clock"></i> 
+                          <span>~</span> 2 weeks
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://github.com/Emmanuelnz/ThePokemonArchives">
+                      <button type="button" class="btn btn-dark">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- myFlix -->
+      <div class="col">
+        <div class="card">
+          <div id="myFlixIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button 
+                type="button" 
+                data-bs-target="#myFlixIndicators" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#myFlixIndicators" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#myFlixIndicators" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/placeholder.png" class="d-block w-100" alt="Welcome screen">
+              </div>
+              <div class="carousel-item">
+                <img src="img/placeholder.png" class="d-block w-100" alt="Home">
+              </div>
+              <div class="carousel-item">
+                <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+              </div>
+            </div>
+            <button 
+              class="carousel-control-prev" 
+              type="button" 
+              data-bs-target="#myFlixIndicators" 
+              data-bs-slide="prev"
+              >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button 
+              class="carousel-control-next" 
+              type="button" 
+              data-bs-target="#myFlixIndicators" 
+              data-bs-slide="next"
+              >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">myFlix</h5>
+            <p class="card-text">myFlix is a 2-part project built as part of the <span>Career Foundry full stack web dev course</span>. Once <span>registered</span>, the app shows the user a movies basic details. It also allows the user to <span>add</span> and <span>remove</span> movies to a favorite movies list. The user can also <span>update</span> their profile information and <span>delete</span> their account. In the first part I created a <span>REST API</span> for the app to pull its data from. I worked with <span>Node.js, MongoDB shell, Mongo, git, PostgreSQL, and Postman</span> for the first time to create the database. In the second part of the project I built the <span>front-end</span> using React.js and React bootstrap, finally connecting both parts to create a fully functioning app. I struggled the most with this app, but it did familiarize me more with reading & debugging code. I also got to spend more time <span>React</span>.
+          </div>
+          <!-- work modal -->
+          <div class="work-modal ">
+            <button 
+              type="button" 
+              class="btn btn-outline-dark" 
+              data-bs-toggle="modal" 
+              data-bs-target="#myFlixModal"
+              >More
+            </button>
+
+            <div class="modal fade" id="myFlixModal" tabindex="-1" aria-labelledby="myFlixModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="myFlixModalLabel">myFlix</h1>
+                    <button 
+                      type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close"
+                      >
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="myFlixLight" class="carousel carousel-Light slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="0" 
+                          class="active" 
+                          aria-current="true" 
+                          aria-label="Slide 1"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="1" 
+                          aria-label="Slide 2"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="2" 
+                          aria-label="Slide 3"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="3" 
+                          aria-label="Slide 4"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="4" 
+                          aria-label="Slide 5"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="5" 
+                          aria-label="Slide 6"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#myFlixLight" 
+                          data-bs-slide-to="6" 
+                          aria-label="Slide 7"
+                          >
+                        </button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Welcome Screen">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Register</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Home">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Login</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Home">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Home Page</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>User Page</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Movie</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Directors</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Genre</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button 
+                        class="carousel-control-prev" 
+                        type="button" 
+                        data-bs-target="#myFlixLight" 
+                        data-bs-slide="prev"
+                        >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button 
+                        class="carousel-control-next" 
+                        type="button" 
+                        data-bs-target="#myFlixLight" 
+                        data-bs-slide="next"
+                        >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div>
+                      <ul class="work-modal-list list-group">
+                        <li class="list-group-item">
+                          <span>myFlix</span> is a 2-part project built as part of the <span>Career Foundry full stack web dev course</span>. Once <span>registered</span>, the app shows the user a movies basic details. It also allows the user to <span>add</span> and <span>remove</span> movies to a favorite movies list. The user can also <span>update</span> their profile information and <span>delete</span> their account. In the first part I created a <span>REST API</span> for the app to pull its data from. I worked with <span>Node.js, MongoDB shell, Mongo, git, PostgreSQL, and Postman</span> for the first time to create the database. In the second part of the project I built the <span>front-end</span> using React.js and React bootstrap, finally connecting both parts to create a fully functioning app. I struggled the most with this app, but it did familiarize me more with reading & debugging code. I also got to spend more time <span>React</span>.
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-screwdriver-wrench"></i> <span>-</span> | 
+                          HTML <i class="fa-brands fa-html5"></i> |
+                          SCSS <i class="fa-brands fa-sass"></i> | 
+                          Javascript <i class="fa-brands fa-square-js"></i> | 
+                          React <i class="fa-brands fa-react"></i> |
+                          Bootstrap <i class="fa-brands fa-bootstrap"></i> |
+                          git <i class="fa-brands fa-git-alt"></i> |
+                          Node.js <i class="fa-brands fa-node-js"></i> | 
+                          Mongo & Mongo DB <i class="fa-brands fa-envira"></i> | 
+                          PostgreSQL | 
+                          Postman |
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-clock"></i> 
+                          <span>~</span> 12 weeks 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://github.com/Emmanuelnz/myFlix-client">
+                      <button type="button" class="btn btn-dark">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- M E E T -->
+      <div class="col">
+        <div class="card">
+          <div id="meetIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button 
+                type="button" 
+                data-bs-target="#meetIndicators" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#meetIndicators" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#meetIndicators" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/ReactApp-Welcome.png" class="d-block w-100" alt="Welcome screen">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ReactApp-Home.png" class="d-block w-100" alt="Home">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ReactApp-Search&Details.png" class="d-block w-100" alt="Functionality">
+              </div>
+            </div>
+            <button 
+              class="carousel-control-prev" 
+              type="button" 
+              data-bs-target="#meetIndicators" 
+              data-bs-slide="prev"
+              >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button 
+              class="carousel-control-next" 
+              type="button" 
+              data-bs-target="#meetIndicators" 
+              data-bs-slide="next"
+              >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">M E E T</h5>
+            <p class="card-text"><span>M E E T</span> is a <span>Progressive Web App</span> that shows developers upcoming events around them. This project is part of the Career Foundry Full-Stack web dev course. I used a mix of <span>Test Driven Development</span> and <span>Behavior Driven Development</span> when developing the app. During the course of the project I was introduced to<span> AWS Lambda</span>, <span>Serverless</span>, <span>Gherkin</span>,  and working with <span>Googles APIs</span>. I used tools like <span>Cucumber</span> to write test for features, along with <span>Jest</span> to test those features during development.
+          </div>
+          <!-- work modal -->
+          <div class="work-modal">
+            <button 
+              type="button" 
+              class="btn btn-outline-dark" 
+              data-bs-toggle="modal" 
+              data-bs-target="#meetModal"
+              >More
+            </button>
+
+            <div class="modal fade" id="meetModal" tabindex="-1" aria-labelledby="meetModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="meetModalLabel">M E E T</h1>
+                    <button 
+                      type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close"
+                      >
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="meetDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button 
+                          type="button" 
+                          data-bs-target="#meetDark" 
+                          data-bs-slide-to="0" 
+                          class="active" 
+                          aria-current="true" 
+                          aria-label="Slide 1"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#meetDark" 
+                          data-bs-slide-to="1" 
+                          aria-label="Slide 2"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#meetDark" 
+                          data-bs-slide-to="2" 
+                          aria-label="Slide 3"
+                          >
+                        </button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="img/ReactApp-Welcome.png" class="d-block w-100" alt="Welcome Screen">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Welcome Screen</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="img/ReactApp-Home.png" class="d-block w-100" alt="Home">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Home Page</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/ReactApp-Search&Details.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>City Search and Details</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button 
+                        class="carousel-control-prev" 
+                        type="button" 
+                        data-bs-target="#meetDark" 
+                        data-bs-slide="prev"
+                        >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button 
+                        class="carousel-control-next" 
+                        type="button" 
+                        data-bs-target="#meetDark" 
+                        data-bs-slide="next"
+                        >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div>
+                      <ul class="work-modal-list list-group">
+                        <li class="list-group-item">
+                          <span>M E E T</span> is a <span>Progressive Web App</span> that shows developers upcoming events around them. This project is part of the Career Foundry Full-Stack web dev course. I used a mix of <span>Test Driven Development</span> and <span>Behavior Driven Development</span> when developing the app. During the course of the project I was introduced to<span> AWS Lambda</span>, <span>Serverless</span>, <span>Gherkin</span>,  and working with <span>Googles APIs</span>. I used tools like <span>Cucumber</span> to write test for features, along with <span>Jest</span> to test those features during development. 
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-screwdriver-wrench"></i> <span>-</span> |
+                          HTML <i class="fa-brands fa-html5"></i> | 
+                          CSS <i class="fa-brands fa-css3-alt"></i> | 
+                          Javascript <i class="fa-brands fa-square-js"></i> | 
+                          React <i class="fa-brands fa-react"></i> | 
+                          Gherkin |
+                          Cucumber |
+                          Jest |
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-clock"></i> 
+                          <span>~</span> 1.5 week
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://github.com/Emmanuelnz/meet">
+                      <button type="button" class="btn btn-dark">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Coming Soon -->
+      <div class="col">
+        <div class="card">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button 
+                type="button" 
+                data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+              </button>
+              <button 
+                type="button" 
+                data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/placeholder.png" class="d-block w-100" alt="Welcome screen">
+              </div>
+              <div class="carousel-item">
+                <img src="img/placeholder.png" class="d-block w-100" alt="Home">
+              </div>
+              <div class="carousel-item">
+                <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+              </div>
+            </div>
+            <button 
+              class="carousel-control-prev" 
+              type="button" 
+              data-bs-target="#carouselExampleIndicators" 
+              data-bs-slide="prev"
+              >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button 
+              class="carousel-control-next" 
+              type="button" 
+              data-bs-target="#carouselExampleIndicators" 
+              data-bs-slide="next"
+              >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Coming</h5>
+            <p class="card-text">Soon
+          <!-- work modal -->
+          <div class="work-modal">
+            <button 
+              type="button" 
+              class="btn btn-outline-dark" 
+              data-bs-toggle="modal" 
+              data-bs-target="#ExampleModal"
+              >More
+            </button>
+
+            <div class="modal fade" id="ExampleModal" tabindex="-1" aria-labelledby="ExampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ExampleModalLabel">Title</h1>
+                    <button 
+                      type="button" 
+                      class="btn-close" 
+                      data-bs-dismiss="modal" 
+                      aria-label="Close"
+                      >
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button 
+                          type="button" 
+                          data-bs-target="#carouselExampleDark" 
+                          data-bs-slide-to="0" 
+                          class="active" 
+                          aria-current="true" 
+                          aria-label="Slide 1"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#carouselExampleDark" 
+                          data-bs-slide-to="1" 
+                          aria-label="Slide 2"
+                          >
+                        </button>
+                        <button 
+                          type="button" 
+                          data-bs-target="#carouselExampleDark" 
+                          data-bs-slide-to="2" 
+                          aria-label="Slide 3"
+                          >
+                        </button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Welcome Screen">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>title</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Home">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>title</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/placeholder.png" class="d-block w-100" alt="Functionality">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>title</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button 
+                        class="carousel-control-prev" 
+                        type="button" 
+                        data-bs-target="#carouselExampleDark" 
+                        data-bs-slide="prev"
+                        >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button 
+                        class="carousel-control-next" 
+                        type="button" 
+                        data-bs-target="#carouselExampleDark" 
+                        data-bs-slide="next"
+                        >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div>
+                      <ul class="work-modal-list list-group">
+                        <li class="list-group-item">About</li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-screwdriver-wrench"></i> <span>-</span>|
+                        </li>
+                        <li class="list-group-item">
+                          <i class="fa-solid fa-clock"></i>
+                          <span>~</span> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                    <a href="">
+                      <button type="button" class="btn btn-dark">Github</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-------------------- End of Work / Projects  -------------------->
+    <div class="in-betweens" id="about">
+      <div>
+        <h1>A B O U T</h1>
+      </div> 
+    </div>
+    <!-------------------- About -------------------->
+    <div class="about-card card" style="max-width: 70%;">
+      <div class="about-card-body card-body">
+        <p class="card-text"> 
+          My name is Emmanuel. I'm 19 years old and I really enjoy seeing things come together along with my free time. I like challenges as much as the next guy, but what really gets me going is the feeling of making progress. I'm also a minimalist. I like to keep things simple, clean and easy to manage; "Less is more". Those attributes are also seen in my code. Once I set my mind to something, I'm determined to see it through to the end. If a project peaks my interest, I often find myself immersed in it for hours and days on end. 
+        </p>
+      </div>
+    </div>
+    <div class="skills">
+      <p>
+        <button 
+          class="btn btn-outline-light" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#skills-collapse" 
+          aria-expanded="false" 
+          aria-controls="skills-collapse"
+          > S k i l l S
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="skills-card collapse collapse-horizontal" id="skills-collapse">
+          <div class="skills-card card card-body" style="width: 700px;">
+            <h2 class="card-title">My Current Skills</h2>
+            <div>
+              <ul class="work-modal-list list-group">
+                <li class="list-group-item">
+                  <span>Comfortable with -</span> |
+                  HTML <i class="fa-brands fa-html5"></i> |
+                  CSS <i class="fa-brands fa-css3-alt"></i> | 
+                  Bootstrap <i class="fa-brands fa-bootstrap"></i> |
+                </li>
+                <li class="list-group-item">
+                  <span>Working on -</span> |
+                  Javascript <i class="fa-brands fa-square-js"></i> |
+                  React <i class="fa-brands fa-react"></i> |
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------- End of About -------------------->
+    <div class="in-betweens" id="contact">
+      <div>
+        <h1>C O N T A C T</h1>
+      </div> 
+    </div>
+    <!-------------------- Contact -------------------->
+    <div class="contact-card card mb-3" style="max-width: 70%;">
+      <div class="row g-1">
+        <div class="email-div col-md-4">
+          <img src="img/email.png" class="img-fluid rounded-start" alt="mail img">
+          <p>emmanuelnun75@gmail.com</p>
+          <button class="btn btn-outline-dark">
+            <a href="mailto:emmanuelnun75@gmail.com">email me</a>
+          </button>
+        </div>
+        <div class="col-md-8">
+          <div class="about-card-body card-body">
+            <h2 class="card-title">Lets talk!</h2>
+            <div class="contact-form">
+              <form action="#" method="post" id="contact-form">
+                <label for="name">Name: </label> <br>
+                  <input 
+                    type="text" 
+                    id="fname" 
+                    name="firstname" 
+                    placeholder="Your name"
+                    required
+                    > <br>
+                <label class="standard-label" for="contact-email">Email: </label> <br>
+                  <input 
+                  type="email" 
+                  id="contact-email"
+                  placeholder="Your email" 
+                  required
+                  > <br>
+                <label class="standard-label">Message: </label> <br>
+                  <textarea maxlength="240" placeholder="Questions? thoughts?" required></textarea> <br>
+                  <input class="btn btn-outline-dark" type="submit" value="Send message">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------- End of Contact -------------------->
   </main>
 
     <footer class="page-footer">
     <p>
-      You can find me here!
+      You can also find me here!
     </p>
   <div class="social-media">
     <a href="https://github.com/Emmanuelnz" target="_blank">
       <img src="img/githubicon.svg" target="_blank" alt="Github">
-    <a href="https://www.linkedin.com" target="_blank">
+    <a href="https://www.linkedin.com/in/emmanuel-nunez-274526254" target="_blank">
       <img src="img/linkedinicon.svg" target ="_blank" alt="LinkedIn">
     <br>
   </div>
   </footer>
-
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous">
+  </script>
   </body>
 
 </html>
