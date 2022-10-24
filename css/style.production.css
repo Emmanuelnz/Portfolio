@@ -41,14 +41,6 @@ a:active {
   text-decoration: none;
 }
 
-.profile_portrait {
-  float: left;
-  width: 250px;
-  height: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
 .page-footer {
   clear: both;
   display: -webkit-box;
