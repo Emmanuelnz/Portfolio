@@ -1,8 +1,20 @@
 # Portfolio-SIte
-This project is a porfolio site. Its about me and my skills. 
-The project contains a home,about,work, and contact page.
-Its a starter project so its very simple and  direct. 
-The Home page is an introduction.
-The About page, is about me and what I enjoy doing as well as the level of skill I currently have. 
-The Work/Projects page contains the projects Iv done/will be doing.
-The Contact page is where you can find information on how to reach me. 
+This project is a my portfolio where my skills and other projects are displayed, as well as my contact information. The portfolio displays sections with thier own information regarding me or my skills and projects I'v made. It's all displayed on one page but the work section also offers a link to another page that solely displays my work. 
+
+# Tools 
+- HTML 
+- CSS
+- Javascript
+
+# Sections 
+## Home 
+First page you see upon visiting the website
+
+## Work
+Second section you see when scrolling down, it displays some of my work and information about the project. You can also find a link to another page where more of my projects are displayed.
+
+## About 
+Third section you see when scrolling down, it displays a little bit of information about me. It also displays my skills and what tools I can use right under it.
+
+## Contact 
+Fourth and final section you see when scrolling down, it displays my email address and a message box you can use to reach me. 
