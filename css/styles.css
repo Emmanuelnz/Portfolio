@@ -7,8 +7,6 @@ Secondary color (orange): #e0b354
 */
 
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
 }
 
@@ -24,8 +22,42 @@ body {
   animation: animate 15s ease infinite;
 }
 
-h5 {
+span {
+  font-weight: bold;
+}
+
+/* links  */
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+/* Space between the content*/
+.in-betweens {
+  /* background: #fff; */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 5px #fff solid;
+  border-left: hidden;
+  border-right: hidden;
+}
+
+.in-betweens h1 {
   font-family: 'Comfortaa', cursive;
+  font-size: 75px;
+  font-weight: thin;
+  color: #000;
+  letter-spacing: 5px;
 }
 /* ===============  INDEX/HOME CSS  ===============*/
 .page-header {
@@ -68,142 +100,148 @@ h5 {
 .profile {
   /* background: #fff; */
   padding-top: 30px;
-  padding-bottom: 15%;
+  padding-bottom: 55vh;
 }
-
-/* ===============  WORK CSS  ===============*/
-.in-betweens {
-  background: #fff;
-  text-align: center;
-  margin-top: 225px;
-  margin-bottom: 7%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.in-betweens h1 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 75px;
-  font-weight: thin;
-  color: black;
-  letter-spacing: 5px;
-}
-
-.card-body {
-  max-height: 250px;
-  overflow: hidden;
-}
-
-.work-cards {
-  padding-top: 10px;
-  margin-left: 10px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.work-cards span {
-  font-weight: bold;
-}
-
-.work-modal {
-  text-align: center;
-}
-
-.work-modal button {
-  padding: 5px 12%;
-}
-
-.work-modal-list {
-  text-align: left;
-  padding-top: 15px;
-}
-
-.work-modal-list span {
-  font-weight: bold;
-}
-
-.modal-title {
-  font-family: 'Comfortaa', cursive;
-  font-weight: bold;
-}
-
-.modal-footer {
-  justify-content: left;
-}
-
-.modal-footer button {
-  padding: 5px 25%;
-}
-/* ===============  ABOUT CSS  ===============*/
-.about-card {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-card-body {
-  text-align: center;
-  max-height: none;
-}
-
-.skills {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.skills button {
-  font-size: 20px;
-  padding: 10px 30px;
-}
-
-.skills-card {
-  margin-left: auto;
-  margin-right: auto;
-}
-/* ===============  CONTACT CSS  ===============*/
-.contact-card {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-card h2 {
-  font-size: 35px;
-  text-align: center;
-}
-
-.contact-card button {
-  font-weight: 500;
-}
-
-.contact-form {
-  text-align: center;
-}
-
-.email-div {
-  text-align: center;
-}
-
-.email-div p {
-  font-style: italic;
-  font-size: 80%;
-  margin-top: -20%;
-}
-
-.email-div a {
-  text-decoration: none;
-  color: black;
-}
-
-.email-div a:hover,
-a:focus {
-  text-decoration: none;
-  color: #fff;
-}
-
-.page-footer {
-  clear: both;
+/* ===============  PROJECTS CSS  ===============*/
+.row {
   display: flex;
-  flex-direction: column;
+}
+
+.column {
+  flex: 50%;
+}
+
+dt {
+  font-size: 22px;
+}
+
+dl {
+  list-style: square;
+}
+
+.projects {
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-background {
+  background-color: #fff;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.project-img {
+  max-height: 75%;
+  max-width: 85%;
+  border: 2px #000 solid;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.project-tools {
+  column-count: 2;
+}
+
+.project-title {
+  font-size: 35px;
+}
+
+/* Buttons under project images */
+.project-buttons {
+  padding-top: 12px;
+}
+
+.project-buttons button {
+  color: #000;
+}
+
+.project-buttons button:hover {
+  border: 2px solid #000;
+}
+
+.button-icons {
+  width: 25px;
+}
+
+.btn-2 {
+  margin-left: 5px;
+}
+
+/* ===============  ABOUT CSS  ===============*/
+.about-content {
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-content dd {
+  margin-top: 15px;
+}
+
+.about-img {
+  margin-top: 10px;
+  max-height: 75%;
+  max-width: 85%;
+  border: 2px #000 solid;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.about-mapIcon {
+  max-width: 25px;
+}
+
+/* ===============  CONTACT CSS  ===============*/
+.contact-content {
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.contact-content img {
+  max-width: 40px;
+}
+
+.content-iconName {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #000;
+  padding-right: 18px;
+  padding-left: 4px;
+}
+
+.contact-formInputs {
+  font-size: 25px;
+  padding-bottom: 15px;
+  width: 70%;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+}
+
+.contact-form-btn {
+  padding: 12px 17px;
+  border-radius: 50px;
+  font-size: 25px;
+  color: #fff;
+  background: #000;
+}
+
+/* ===============  FOOTER CSS  ===============*/
+footer {
   text-align: center;
+}
+
+footer button {
+  margin-top: 150px;
+}
+
+footer img {
+  max-height: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 * {
@@ -265,6 +303,7 @@ a:focus {
   }
 }
 
+/* Animation */
 @keyframes animate {
   0% {
     background-position: 0 50%;
