@@ -13,12 +13,14 @@ body {
   font-family: 'Open sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  min-width: 570px;
   line-height: 1.6;
-  background: linear-gradient(-45deg, blue, red, blue, cyan, pink, red, red);
-  background-size: 400% 400%;
-  width: 100%;
-  height: 200vh;
-  animation: animate 15s ease infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background: linear-gradient(-45deg, blue, red, blue, cyan, pink, red, red);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite; */
 }
 
 span {
@@ -27,15 +29,15 @@ span {
 
 /* links  */
 a {
-  color: #fff;
+  color: transparent;
 }
 
 a:hover {
-  color: #fff;
+  color: transparent;
 }
 
 a:visited {
-  color: #fff;
+  color: transparent;
 }
 
 /* Space between the content*/
@@ -46,7 +48,7 @@ a:visited {
   margin-bottom: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
-  border: 5px #fff solid;
+  border: 5px #000 solid;
   border-left: hidden;
   border-right: hidden;
 }
@@ -86,6 +88,7 @@ a:visited {
   padding-top: 150px;
   font-size: 80px;
   margin-left: 21%;
+  margin-right: 10%;
 }
 
 .sub-intro {
@@ -126,7 +129,7 @@ dl {
 }
 
 .project-background {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -196,7 +199,7 @@ dl {
   margin-left: 17%;
   margin-right: 17%;
   padding-top: 55px;
-  padding-bottom: 55px;
+  padding-bottom: 195px;
 }
 
 .contact-content img {
@@ -302,15 +305,15 @@ footer img {
   }
 }
 
-/* Animation */
-@keyframes animate {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
+/* Background Animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
