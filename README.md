@@ -1,5 +1,5 @@
 # Portfolio-Site
-This project is a my portfolio where my skills and other projects are displayed, as well as my contact information. The portfolio displays sections with thier own information regarding me or my skills and projects I'v made. It's all displayed on one page but the work section also offers a link to another page that solely displays my work. 
+This project is my portfolio where my skills and other projects are displayed, as well as my contact information. The portfolio displays sections with thier own information regarding me or my skills and projects I'v made. It's all displayed on one page but the work section also offers a link to another page that solely displays my work. 
 
 # Tools 
 - HTML 
